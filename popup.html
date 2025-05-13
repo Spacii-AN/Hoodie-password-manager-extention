@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hoodie Password Manager</title>
+  <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Hoodie Password Manager</h1>
+      <div id="status" class="status"></div>
+    </div>
+
+    <div id="login-form" class="form-section">
+      <input type="text" id="username" placeholder="Username" class="input-field">
+      <input type="password" id="password" placeholder="Password" class="input-field">
+      <button id="login-btn" class="btn primary">Login</button>
+    </div>
+
+    <div id="password-list" class="password-section hidden">
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="Search passwords..." class="input-field">
+      </div>
+      <div id="passwords" class="password-list"></div>
+    </div>
+
+    <div id="actions" class="actions hidden">
+      <button id="add-password" class="btn secondary">Add Password</button>
+      <button id="generate-password" class="btn secondary">Generate Password</button>
+      <button id="logout" class="btn danger">Logout</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
